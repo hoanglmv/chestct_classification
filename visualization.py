@@ -20,7 +20,7 @@ def plot(df):
     plt.show()
 
 
-def plot_predictions(model):
+def plot_predictions(model,label_encoder,x_sample):
     # Predict labels
     y_pred_probs = model.predict(x_sample)
     y_pred = np.argmax(y_pred_probs, axis=1)
